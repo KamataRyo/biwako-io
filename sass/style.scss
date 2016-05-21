@@ -1,0 +1,16 @@
+/*!
+Template:twentysixteen
+Theme Name: biwako_io
+Theme URI:http://biwako.io/
+Description:child theme for twentysixteen for my blog
+Author:KamataRyo
+Version:1.0
+*/
+
+@import url("../twentysixteen/style.css");
+
+.entry-content pre {
+    white-space: pre;
+    overflow: scroll;
+    font-family: "Courier 10 Pitch",Courier,monospace
+}
