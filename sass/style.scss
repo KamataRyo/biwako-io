@@ -9,8 +9,19 @@ Version:1.0
 
 @import url("../twentysixteen/style.css");
 
-.entry-content pre {
-    white-space: pre;
-    overflow: scroll;
-    font-family: "Courier 10 Pitch",Courier,monospace
+.entry-content {
+    pre {
+        white-space: pre;
+        overflow: scroll;
+        font-family: "Courier 10 Pitch",Courier,monospace
+    }
+    a.more-link {
+        display: block;
+        margin: 2em;
+        padding: .25em;
+        text-align: center;
+        border:solid 1px;
+        box-shadow: none;
+        border-radius: 2px;
+    }
 }

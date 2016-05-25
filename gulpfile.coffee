@@ -19,4 +19,4 @@ gulp.task 'sass', ->
 gulp.task 'build', ['coffee', 'sass']
 
 gulp.task 'watch', ['build'], ->
-    gulp.watch ['./coffee/**/*.coffee', './sass/**/*.scss']
+    gulp.watch ['./coffee/**/*.coffee', './sass/**/*.scss'], ['build']
