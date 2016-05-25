@@ -1,0 +1,15 @@
+language: node_js
+
+branches:
+  only:
+    - master
+
+script:
+  - npm test
+
+after_success: bash ./bin/deploy.sh
+
+env:
+  global:
+  - GH_REF: github.com/kamataryo/biwako-io.git
+  - secure: "bssBxTNuV7VwYoWEcj9ZD96ncbm0lqCS9H6AE4pZfOkP1Jg6k3/pP8Bjjq1iioPz9H4KXp7knz5KcImM3zqSp59RmG05bpT6qk4ImuriXA8BEl6TtwZrovmj33151hcQ4lxKk7+OVcmw49Mbh+elR7rkgERGeazHGQatYdgn+pokbj0vE9tC3nVxAh3GLjeFCss5Dnd7O5hUMpgNoE8mlANywyLvCYvnlXQU5VPnwmlNnNCT8HU9Z1vtnsSCIhpN8qGiNwkmnjf2CZ4JxQHy8BfQdGbdxcfKu/CaOFI8VKXxceRj2IQqIxHKxEy1HBoHIYoj2tSSmrDB+0ohA6hJxbEVWZrTupDamsK88EHV/c7kT0JEu3WxISjqBOHtqGn7wFZMSD7qrdss2fm16mlmNVuURECpkcB+6GWT3vJtEYLYZssTZKOQcJlOyBWXydKm3d/RkS9GKD6F73fzakWPwaUrGYwxoPDvkajx8ReV0MXGJv08rog11HEAOSMdE/haEUmQcH+Nj8p+W2BhJyp8ciPr+nGpasOZfkgMclhT6npvA7XzEhwIEZmE6+Q03sw7rhqm3xEEcpIZbsvyYv8d8ZAxv16h61r1xB4GTZ67kjvbPDO0/vElwEJu01PQFI40n9uyTIFIBLERY6OeuKsZhrvp0z1usNxS/EI5W96bF+U="

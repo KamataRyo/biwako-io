@@ -17,4 +17,4 @@ wp-content/plugins/hello.php
 /license.txt
 
 node_modules
-./style.css
+style.css

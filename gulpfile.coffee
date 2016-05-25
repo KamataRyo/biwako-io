@@ -15,3 +15,8 @@ gulp.task 'sass', ->
             .on 'error', sass.logError
         .pipe sourcemaps.write()
         .pipe gulp.dest './'
+
+gulp.task 'build', ['coffee', 'sass']
+
+gulp.task 'watch', ['build'], ->
+    gulp.watch ['./coffee/**/*.coffee', './sass/**/*.scss']
